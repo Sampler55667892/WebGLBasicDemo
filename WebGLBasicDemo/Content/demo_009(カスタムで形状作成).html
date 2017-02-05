@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="../Scripts.append/lib/three.min.js"></script>
+    <script type="text/javascript" src="../Scripts.append/lib/Projector.js"></script>
+    <script type="text/javascript" src="../Scripts.append/lib/TrackballControls.js"></script>
+    <script type="text/javascript" src="../Scripts.append/lib.custom/customMvWrapper.js"></script>
+    <script type="text/javascript" src="../Scripts.append/lib.custom/perlinNoise.js"></script>
+    <script type="text/javascript" src="../Scripts.append/demo_009.js"></script>
+</head>
+<body onload="onLoad();">
+    <div>
+        <div id="canvas-frame" style="width:500px; height:500px;"></div>
+    </div>
+    <br>
+    <div>
+        <table>
+            <tr>
+                <td><label>ScaleX<label/></td>
+                <td><input id="scaleX" type="text" style="width: 100px;" value="0.06" /></td>
+                <td><label>ScaleY<label/></td>
+                <td><input id="scaleY" type="text" style="width: 100px;" value="0.08" /></td>
+                <td><label>ScaleZ<label/></td>
+                <td><input id="scaleZ" type="text" style="width: 100px;" value="5.0" /></td>
+                <td><input type="submit" value="Update" onclick="updateScale();" /></td>
+            </tr>
+        </table>
+        <br>
+        <div>
+            ※デフォルト値：ScaleX = 0.06, ScaleY = 0.08, ScaleZ = 5.0
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" onclick="enableWireframe(this.checked);">ワイヤーフレーム</input>
+        </div>
+    </div>
+</body>
+</html>
